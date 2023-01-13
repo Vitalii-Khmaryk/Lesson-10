@@ -1,0 +1,416 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: chocolate;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.original-block, .main-block .main-ball .block__ball, .main-block .main-tumblr .block__tumblr, .main-block .main-facebook .block__facebook, .main-block .main-linkedin .block__linkedin, .main-block .main-youtube .block__youtube, .main-block .main-instagram .block__instagram, .main-block .main-twitter .block__twitter {
+  width: 100%;
+  font-size: 34px;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(166, 158, 215);
+  border-left: 1px solid darkcyan;
+  position: relative;
+}
+
+.main-block {
+  width: 100%;
+  height: 250px;
+  background-color: lightseagreen;
+  margin-top: 100px;
+  display: flex;
+}
+.main-block .main-twitter {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+.main-block .main-twitter .block__twitter::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-block .main-twitter .block__twitter:hover::after {
+  content: "";
+  width: 100%;
+  background-color: red;
+  display: block;
+  font-size: 44px;
+  background-image: url(twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-block .main-twitter .text-twitter {
+  display: none;
+  position: relative;
+  background-color: white;
+  height: 250px;
+  width: 0;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+.main-block .main-twitter .text-twitter h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main-block .main-twitter:hover {
+  width: 35%;
+}
+.main-block .main-twitter:hover .block__twitter {
+  width: 18%;
+}
+.main-block .main-twitter:hover .text-twitter {
+  width: 82%;
+  display: block;
+}
+.main-block .main-instagram {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+.main-block .main-instagram .block__instagram::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-block .main-instagram .block__instagram:hover::after {
+  content: "";
+  width: 100%;
+  background-color: rgb(75, 240, 15);
+  display: block;
+  font-size: 44px;
+  background-image: url(instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-block .main-instagram .text-instagram {
+  display: none;
+  position: relative;
+  background-color: white;
+  height: 250px;
+  width: 0;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+.main-block .main-instagram .text-instagram h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main-block .main-instagram:hover {
+  width: 35%;
+}
+.main-block .main-instagram:hover .block__instagram {
+  width: 18%;
+}
+.main-block .main-instagram:hover .text-instagram {
+  width: 82%;
+  display: block;
+}
+.main-block .main-youtube {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+.main-block .main-youtube .block__youtube::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-block .main-youtube .block__youtube:hover::after {
+  content: "";
+  width: 100%;
+  background-color: red;
+  display: block;
+  font-size: 44px;
+  background-image: url(youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-block .main-youtube .text-youtube {
+  display: none;
+  position: relative;
+  background-color: white;
+  height: 250px;
+  width: 0;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+.main-block .main-youtube .text-youtube h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main-block .main-youtube:hover {
+  width: 35%;
+}
+.main-block .main-youtube:hover .block__youtube {
+  width: 18%;
+}
+.main-block .main-youtube:hover .text-youtube {
+  width: 82%;
+  display: block;
+}
+.main-block .main-linkedin {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+.main-block .main-linkedin .block__linkedin::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-block .main-linkedin .block__linkedin:hover::after {
+  content: "";
+  width: 100%;
+  background-color: rgb(0, 89, 253);
+  display: block;
+  font-size: 44px;
+  background-image: url(linkedin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-block .main-linkedin .text-linkedin {
+  display: none;
+  position: relative;
+  background-color: white;
+  height: 250px;
+  width: 0;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+.main-block .main-linkedin .text-linkedin h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main-block .main-linkedin:hover {
+  width: 35%;
+}
+.main-block .main-linkedin:hover .block__linkedin {
+  width: 18%;
+}
+.main-block .main-linkedin:hover .text-linkedin {
+  width: 82%;
+  display: block;
+}
+.main-block .main-facebook {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+.main-block .main-facebook .block__facebook::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-block .main-facebook .block__facebook:hover::after {
+  content: "";
+  width: 100%;
+  background-color: rgb(69, 56, 110);
+  display: block;
+  font-size: 44px;
+  background-image: url(facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-block .main-facebook .text-facebook {
+  display: none;
+  position: relative;
+  background-color: white;
+  height: 250px;
+  width: 0;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+.main-block .main-facebook .text-facebook h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main-block .main-facebook:hover {
+  width: 35%;
+}
+.main-block .main-facebook:hover .block__facebook {
+  width: 18%;
+}
+.main-block .main-facebook:hover .text-facebook {
+  width: 82%;
+  display: block;
+}
+.main-block .main-tumblr {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+.main-block .main-tumblr .block__tumblr::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-block .main-tumblr .block__tumblr:hover::after {
+  content: "";
+  width: 100%;
+  background-color: rgb(84, 129, 0);
+  display: block;
+  font-size: 44px;
+  background-image: url(tumblr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-block .main-tumblr .text-tumblr {
+  display: none;
+  position: relative;
+  background-color: white;
+  height: 250px;
+  width: 0;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+.main-block .main-tumblr .text-tumblr h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main-block .main-tumblr:hover {
+  width: 35%;
+}
+.main-block .main-tumblr:hover .block__tumblr {
+  width: 18%;
+}
+.main-block .main-tumblr:hover .text-tumblr {
+  width: 82%;
+  display: block;
+}
+.main-block .main-ball {
+  display: flex;
+  width: 100px;
+  height: 100%;
+  position: relative;
+}
+.main-block .main-ball .block__ball::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 100%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-block .main-ball .block__ball:hover::after {
+  content: "";
+  width: 100%;
+  background-color: rgb(255, 0, 0);
+  display: block;
+  font-size: 44px;
+  background-image: url(basketball.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-block .main-ball .text-ball {
+  display: none;
+  position: relative;
+  background-color: white;
+  height: 250px;
+  width: 0;
+  text-align: left;
+  line-height: 30px;
+  padding-top: 5%;
+  padding-left: 1%;
+}
+.main-block .main-ball .text-ball h1 {
+  font-size: 40px;
+  font-weight: 500;
+  padding-top: 40px;
+  padding-bottom: 10px;
+}
+.main-block .main-ball:hover {
+  width: 35%;
+}
+.main-block .main-ball:hover .block__ball {
+  width: 18%;
+}
+.main-block .main-ball:hover .text-ball {
+  width: 82%;
+  display: block;
+}/*# sourceMappingURL=main.css.map */
